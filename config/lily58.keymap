@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+&nice_view_spi {
+    compatible = "nordic,nrf-spim";
+    status = "okay";
+    mosi-pin = <17>;
+    sck-pin = <20>;
+    miso-pin = <25>;
+    cs-gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
