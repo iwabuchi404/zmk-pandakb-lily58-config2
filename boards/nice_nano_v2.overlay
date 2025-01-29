@@ -4,12 +4,15 @@
     pinctrl-0 = <&spi1_default>;
     pinctrl-1 = <&spi1_sleep>;
     pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio0 22 GPIO_ACTIVE_HIGH>;
 
     nice_view: nice_view@0 {
         compatible = "nordic,nrf-spi";
         status = "okay";
         reg = <0>;
         spi-max-frequency = <4000000>;
+        interrupts = <22 1>;
+        label = "NICE_VIEW";
     };
 };
 
