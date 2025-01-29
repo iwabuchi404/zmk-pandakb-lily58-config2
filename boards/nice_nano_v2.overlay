@@ -19,8 +19,8 @@
         y-offset = <0>;
         madctl = <0x08>;
         colmod = <0x55>;
-        caset = <0 0 0 159>;
-        raset = <0 0 0 127>;
+        caset = [00 00 00 9F];
+        raset = [00 00 00 7F];
         vmctr1 = <0x0E>;
         invctr = <0x07>;
         pwctr1 = [A2 02 84];
